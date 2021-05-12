@@ -1,0 +1,323 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../Technical Documentation Page/style.css">
+    <title>Technical Documentation Page</title>
+</head>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-12 col-xs-12">
+            <nav id = "navbar ">
+                <header>Python Tutorial</header>
+                    <ul class="nav nav-pills nav-stacked">
+                        <a class="nav-link" href="#Introduction" rel="internal">
+                            <li>Introduction</li>
+                        </a>
+                        <a class="nav-link" href="#keywords_and_identifier" rel="internal">
+                            <li>Keywords and Identifier</li>
+                        </a>
+                        <a class="nav-link" href="#statements_and_comments" rel="internal">
+                            <li>Statements and Comments</li>
+                        </a>
+                        <a class="nav-link" href="#variables" rel="internal">
+                            <li>Variables</li>
+                        </a>
+                        
+                        <a class="nav-link" href="#operators" rel="internal">
+                            <li>Operators</li>
+                        </a>
+                        <a class="nav-link" href="#if_else" rel="internal">
+                            <li>If...Else</li>
+                        </a>
+                        <a class="nav-link" href="#for_loop" rel="internal">
+                            <li>For Loop</li>
+                        </a>
+                        <a class="nav-link" href="while_loop" rel="internal">
+                            <li>While Loop</li>
+                        </a>
+                        
+                        <a class="nav-link" href="list" rel="internal">
+                            <li>List</li>
+                        </a>
+                        <a class="nav-link" href="tuple" rel="internal">
+                            <li>Tuple</li>
+                        </a>
+                        <a class="nav-link" href="string" rel="internal">
+                            <li>String</li>
+                        </a>
+                    </ul>
+                </nav>
+                </div>
+                    <div class="col-md-10 col-sm-12 col-xs-12">
+                        <main id="main-doc">
+                            <section class="main-section" id="Introduction">
+                                <header>Introduction</header>
+                                <article>
+                                    <p> Python is a cross-platform programming language, which means that 
+                                        it can run on multiple platforms like Windows, macOS, Linux, and has even 
+                                        been ported to the Java and .NET virtual machines. It is free and open-source.
+                                    </p>
+                                    <p>Even though most of today's Linux and Mac have Python pre-installed in it, 
+                                        the version might be out-of-date. So, it is always a good idea to install the 
+                                        most current version.
+                                    </p>
+                                    <p>Let's create a very simple program called Hello World. A "Hello, World!" 
+                                        is a simple program. Since it's a very simple program, it's often used to introduce a new
+                                        programming language to beginners.</p>
+                                    <code>print("Hello, world!")</code>
+                                    <p>Then, run the file. You will get the following output.</p>
+                                    <code>Hello, world!</code>
+                                    </artice>
+                            </section>
+                            <section class="main-section" id="keywords_and_identifiers">
+                                <header>Keywords and Identifiers</header>
+                                <article>
+                                    <h3>Keywords</h3>
+                                    <p>Keywords are the reserved words in Python.</p>
+
+                                    <p>We cannot use a keyword as a <a href="/python-programming/variables-datatypes">variable</a> name, <a href="/python-programming/function">function</a> name or any other identifier. They are used to define the syntax and structure of the Python language.</p>
+                                    
+                                    <p>In Python, keywords are case sensitive.</p>
+                                    
+                                    <p>There are 33 keywords in Python 3.7. This number can vary slightly over the course of time.</p>
+                                    
+                                    <p>All the keywords except <code>True</code>, <code>False</code> and <code>None</code> are in lowercase and they must be written as they are. The list of all the keywords is given below.</p>
+                                    
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><code>False</code></td>
+                                                <td><code>await</code></td>
+                                                <td><code>else</code></td>
+                                                <td><code>import</code></td>
+                                                <td><code>pass</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>None</code></td>
+                                                <td><code>break</code></td>
+                                                <td><code>except</code></td>
+                                                <td><code>in</code></td>
+                                                <td><code>raise</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>True</code></td>
+                                                <td><code>class</code></td>
+                                                <td><code>finally</code></td>
+                                                <td><code>is</code></td>
+                                                <td><code>return</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>and</code></td>
+                                                <td><code>continue</code></td>
+                                                <td><code>for</code></td>
+                                                <td><code>lambda</code></td>
+                                                <td><code>try</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>as</code></td>
+                                                <td><code>def</code></td>
+                                                <td><code>from</code></td>
+                                                <td><code>nonlocal</code></td>
+                                                <td><code>while</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>assert</code></td>
+                                                <td><code>del</code></td>
+                                                <td><code>global</code></td>
+                                                <td><code>not</code></td>
+                                                <td><code>with</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>async</code></td>
+                                                <td><code>elif</code></td>
+                                                <td><code>if</code></td>
+                                                <td><code>or</code></td>
+                                                <td><code>yield</code></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h3>Identifiers</h3>
+                                    <p>An identifier is a name given to entities like class, functions, 
+                                        variables, etc. It helps to differentiate one entity from another.
+                                    </p>
+                                    <h3>Rules for writing identifiers</h3>
+                                    <ol>
+                                        <li>
+                                            Identifiers can be a combination of letters in lowercase (a to z) or
+                                             uppercase (A to Z) or digits (0 to 9) or an underscore _. 
+                                             Names like <code>myClass</code>, <code>var_1</code> and
+                                            <code>print_this_to_screen</code>, all are valid 
+                                             example.
+                                        </li>
+                                        <li>
+                                            An identifier cannot start with a digit. <code>1variable</code> 
+                                            is invalid, but <code>variable1</code> is a valid name.
+
+                                        </li>
+                                        <li>Keywords cannot be used as identifiers.
+                                        <code>global = 1</code>
+                                        <h4>Output</h4>
+                                        <code>File "<interactive input>", line 1<br>  global = 1<br>         ^<br> SyntaxError: invalid syntax</code>
+                                        </li>
+                                        <li>
+                                            <p>We cannot use special symbols like !, @, #, $, % etc. in our identifier.</p><br>
+                                            <code>a@ = 0</code><br>
+                                            <p>Output</p><br>
+                                            <code>File "<interactive input>", line 1<br> a@ = 0<br>     ^<br> SyntaxError: invalid syntax</code>
+
+                                        </li>
+                                        <li> An identifier can be of any length.</li>
+                                    </ol>
+                                </artice>
+                            </section>
+                            <section class="main-section" id="statements_and_comments">
+                                <header>Statements and Comments</header>
+                                <article>
+                                    <h3>Statements</h3>
+                                    <p>
+                                        Instructions that a Python interpreter can execute are called 
+                                        statements. For example, a = 1 is an assignment statement. if 
+                                        statement, for statement, while statement, etc.    
+                                    </p>
+                                    <h3>Comments</h3>
+                                    <li>Comments are very important while writing a program. They describe what is going on inside a program, so that a person looking at the source code does not have a hard time figuring it out.</li>
+
+                                    <li>You might forget the key details of the program you just wrote in a month's time. So taking the time to explain these concepts in the form of comments is always fruitful.</li>
+                                        
+                                    <li>In Python, we use the hash (#) symbol to start writing a comment.</li>
+                                        
+                                    <li>It extends up to the newline character. Comments are for programmers to better understand a program. Python Interpreter ignores comments.</li><br>
+                                    <code>#This is a comment<br> #print out Hello<br> print('Hello')</code>    
+                                </artice>
+                            </section>
+                            <section class="main-section" id="variables">
+                                <header>Variables</header>
+                                <article>
+                                    <p>
+                                        A variable is a named location used to store data in the memory. 
+                                        It is helpful to think of variables as a container that holds data that can be changed later in the 
+                                        program. For example, 
+                                    </p>
+                                    <code>number = 10<br> number = 1.1</code>
+                                    <p>
+                                        Here, we have created a variable named number. We have assigned the value 10 to the variable.
+                                        Later, it was changed to 1.1.
+                                    </p>
+                                    
+                                    </artice>
+                            </section>
+                            <section class="main-section" id="operators">
+                                <header>Operators</header>
+                                <article>
+                                    <p> 
+                                        Operators are special symbols in Python that carry out arithmetic or logical computation.
+                                        The value that the operator operates on is called the operand.<br>
+                                        For example,
+                                    </p>
+                                    <code>>>> 2+3<br> 5</code>
+                                    <p>
+                                        Here, + is the operator that performs addition. 2 and 3 are the operands
+                                        and 5 is the output of the operation.
+                                    </p>
+                                    
+                                    </artice>
+                            </section>
+                            <section class="main-section" id="if_else">
+                                <header>If...Else</header>
+                                <article>
+                                    <p> 
+                                        Decision making is required when we want to execute a code only if a certain condition is satisfied.<br>
+                                        The if…elif…else statement is used in Python for decision making.
+                                    </p>
+                                    <p>Python if Statement Syntax</p>
+                                    <code>if test expression:<br>    statement(s)</code>
+                                    <p>
+                                        Here, the program evaluates the test expression and will execute statement(s) only if the test expression is <code>True</code>.<br>
+                                        If the test expression is <code>False</code>, the statement(s) is not executed.<br>
+                                        In Python, the body of the <code>if</code> statement is indicated by the indentation. The body starts with an indentation and the first unindented line marks the end.<br>
+                                        Python interprets non-zero values as <code>True</code>.<code>None</code>  and <code>0</code> are interpreted as <code>False</code>.
+                                    </p>
+                                    
+                                    </artice>
+                            </section>
+                            <section class="main-section" id="for_loop">
+                                <header>For Loop</header>
+                                <article>
+                                    <p> 
+                                        The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal.
+                                    </p>
+                                    <h3>Syntax of for Loop:</h3><br>
+                                    <code>for val in sequence:<br>   Body of for</code>
+                                    <p>
+                                        Here, val is the variable that takes the value of the item inside the sequence on each iteration.<br>
+                                        Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation.
+                                    </p>
+                                    <p>Example: Python for Loop</p>
+                                    <code># Program to find the sum of all numbers stored in a list<br> # List of numbers<br>numbers = [6, 5, 3, 8, 4, 2, 5, 4, 11]<br> # variable to store the sum<br>sum = 0<br> # iterate over the list<br>for val in numbers:<br>sum = sum+val<br>print("The sum is", sum)</code>
+                                    </artice>
+                            </section>
+                            <section class="main-section" id="while_loop">
+                                <header>While Loop</header>
+                                <article>
+                                    <p> Loops are used in programming to repeat a specific block of code. In this article, you will learn to create a while loop in Python.
+                                    </p>
+                                    <p>
+                                        The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.<br>
+                                        We generally use this loop when we don't know the number of times to iterate beforehand.
+                                    </p>
+                                    <p>Syntax of while Loop in Python</p><br>
+                                    <code>while test_expression:<br>     Body of while</code>
+                                    </artice>
+                            </section>
+                            <section class="main-section" id="list">
+                                <header>List</header>
+                                <article>
+                                    <p> Python offers a range of compound data types often referred to as sequences. List is one of the most frequently used and very versatile data types used in Python.
+                                    </p>
+                                    <h4>How to create a list?</h4>
+                                    <code># empty list<br> my_list = []<br># list of integers<br> my_list = [1, 2, 3]<br># list with mixed data types<br> my_list = [1, "Hello", 3.4]</code>
+                                    <p>A list can also have another list as an item. This is called a nested list.</p>
+                                    <code># nested list<br> my_list = ["mouse", [8, 4, 6], ['a']]</code>
+                                    </artice>
+                            </section>
+                            <section class="main-section" id="tuple">
+                                <header>Tuple</header>
+                                <article>
+                                    <p> A tuple in Python is similar to a list. The difference between the two is that we cannot change the elements of a tuple once it is assigned whereas we can change the elements of a list.
+                                    </p>
+                                    <p>A tuple is created by placing all the items (elements) inside parentheses (), separated by commas. The parentheses are optional, however, it is a good practice to use them.
+                                        <br>
+                                        A tuple can have any number of items and they may be of different types (integer, float, list, string, etc.).
+                                    </p>
+                                    <code># Different types of tuples<br> # Empty tuple<br>my_tuple = ()<br>print(my_tuple)<br> # Tuple having integers<br>my_tuple = (1, 2, 3)<br>print(my_tuple)<br> # tuple with mixed datatypes<br>my_tuple = (1, "Hello", 3.4)<br>print(my_tuple)<br> # nested tuple<br>my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))<br> print(my_tuple)</code><br>
+                                        <h4>Output:</h4>
+                                        <code>()<br>(1, 2, 3)<br>(1, 'Hello', 3.4)<br>('mouse', [8, 4, 6], (1, 2, 3))</code>
+                                    </artice>
+                            </section>
+                            <section class="main-section" id="string">
+                                <header>String</header>
+                                <article>
+                                    <ul>
+                                        <li>A string is a sequence of characters.</li>
+
+                                        <li>A character is simply a symbol. For example, the English language has 26 characters.</li>
+                                            
+                                            <li>Computers do not deal with characters, they deal with numbers (binary). Even though you may see characters on your screen, internally it is stored and manipulated as a combination of 0s and 1s.</li>
+                                            
+                                            <li>This conversion of character to a number is called encoding, and the reverse process is decoding. ASCII and Unicode are some of the popular encodings used.</li>
+                                            
+                                           <li> In Python, a string is a sequence of Unicode characters. Unicode was introduced to include every character in all languages and bring uniformity in encoding. You can learn about Unicode from Python Unicode.</li>
+                                    </ul> 
+                                    <h4>How to create a string in Python?
+                                       </h4>                                  
+                                    <p> Strings can be created by enclosing characters inside a single quote or double-quotes. Even triple quotes can be used in Python but generally used to represent multiline strings and docstrings.
+                                    </p>
+                                    <code># defining strings in Python<br># all of the following are equivalent<br>my_string = 'Hello'<br>print(my_string)<br>my_string = "Hello"<br>print(my_string)<br>my_string = '''Hello'''<br>print(my_string)<br># triple quotes string can extend multiple lines<br>my_string = """Hello, welcome to<br>         the world of Python"""<br>print(my_string)</code><br>
+                                        <p>When you run the program, the output will be:</p>
+                                        <code>Hello<br>Hello<br>Hello<br>Hello, welcome to<br>           the world of Python</code>
+                                    </artice>
+                            </section>
+                         </main>
+        </div>
+    </div>
+</div>
+</html>
