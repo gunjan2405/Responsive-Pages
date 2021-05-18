@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +15,7 @@ body #navbar ul {
   margin: 0;
   color: #fff;
   display: flex;
-  background: #009688;
+  background: #00ace6;
   justify-content: flex-end;
 }
 body #navbar ul li {
@@ -28,13 +29,13 @@ body #navbar ul li a {
 body main #welcome-section {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.37)), url("https://raw.githubusercontent.com/Confidence-Okoghenun/Responsive-Web-Design-Projects---Build-a-Personal-Portfolio-Webpage/master/image/cover1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.37)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE_sSRuTUzxks1V_Cf0LgxE-otNl1mBIuHlA&usqp=CAU");
 }
 body main #welcome-section .welcome-contents {
   color: white;
   margin: 0 10%;
   font-size: 1.3em;
-  min-height: 70vh;
+  min-height: 90vh;
   padding-top: 30vh;
 }
 @media (max-width: 600px) {
@@ -51,7 +52,7 @@ body main #welcome-section .welcome-contents div {
   font-size: 1.5em;
 }
 body main #projects {
-  background: #009688;
+  background: #00ace6;
 }
 body main #projects .projects-title {
   color: white;
@@ -109,7 +110,7 @@ body footer {
   color: white;
   padding: 20px 0;
   text-align: center;
-  background: #048e81;
+  background: #00ace6;
 }
 
-/*# sourceMappingURL=main.css.map */
+
